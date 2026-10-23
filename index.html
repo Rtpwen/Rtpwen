@@ -186,8 +186,7 @@ const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_w1JAmEZ9LvfFRRq95T6YAg_gwlITQ9w
 // 想讓訪客一打開就看到你的最愛歌曲，將官方 YouTube / Spotify 連結貼在這裡。
 const DEFAULT_MUSIC_LINK = 'https://youtu.be/yKNxeF4KMsY'; // Rtpwen 的第一首收藏：Yellow
 let supabaseClient = null;
-if (window.supabase && SUPABASE_URL.startsWith('https://') && !SUPABASE_URL.includes('YOUR_') && SUPABASE_PUBLISHABLE_KEY && !SUPABASE_PUBLISHABLE_KEY.includes('YOUR_')) {
-  supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+if (window.supabase && SUPABASE_URL.startsWith('https://') && !SUPABASE_URL.includes('YOUR_') && SUPABASE_PUBLISHABLE_KEY && !SUPABASE_PUBLISHABLE_KEY.includes(sb_publishable_w1JAmEZ9LvfFRRq95T6YAg_gwlITQ9w = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
 }
 const localScoresKey = 'rtpwen_quiz_leaderboard_v1';
 function safeLocalScores(){ try{return JSON.parse(localStorage.getItem(localScoresKey)||'[]')}catch(e){return []} }
